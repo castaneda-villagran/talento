@@ -1,0 +1,69 @@
+.row1, .row2, .row3 {
+    display: flex;
+    width: 100%;
+   }
+.celeste, .amarillo, .plomo {
+    border: solid 1px black;
+    text-align: center;
+    color: white
+}
+.tres, .cuatro {
+border: solid 1px red;
+color: black;
+}
+
+.celeste { background-color: dodgerblue;}
+.amarillo { background-color: yellow;}
+.plomo { background-color: gray;}
+
+@media (max-width: 349px){
+    .row1, .row2, .row3 {
+        flex-direction: column;
+        
+       }
+
+}
+
+
+@media (min-width: 350px) and (max-width: 650px){
+     .row1, .row2 {
+         flex-direction: column;
+     }
+    
+    .tres { 
+        
+        width: 50%;
+       
+    }
+    .cinco, .seis {
+        width: 49%;      
+       
+         }
+         .siete, .ocho {
+             width: 100%; }
+
+    .row3 {
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 651px) {
+     .uno, .dos {
+         width: 49%;
+    }
+    .tres, .cuatro {
+        width: 49%
+    }
+    .row3 {
+        flex-direction: column;
+        }
+    .cinco {
+        align-self: flex-end;
+        width: 60%;
+    }    
+    .siete {
+        width: 40%;
+    }
+
+}
+   

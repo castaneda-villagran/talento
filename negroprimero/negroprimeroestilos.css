@@ -1,0 +1,60 @@
+/* body {
+    display: flex;
+    width: 100%; */
+
+.row1, .row2, .row3, .row4 { display: flex;
+    width: 100%; }
+
+.negro { background-color: black;}
+.naranjo {background-color: orange;}
+.azul { background-color: blue;}
+.verde { background-color: green;}
+
+.negro, .naranjo, .azul, .verde {
+    border: solid 1px white;
+    text-align: center;
+    color: white;
+}
+@media (max-width: 200px){
+    .row1, .row2, .row3, .row4 {
+        flex-direction: column; }}
+
+@media (min-width: 201px) and (max-width: 700px){
+    .row1, .row2, .row3, .row4 {
+        flex-direction: column; }
+    .negro, .naranjo, .azul, .verde {  
+        width: 100%; }
+    .dotre{ 
+    display: flex; }
+    .cuatro{
+        width: 80%;
+        align-self: center; }
+    .cinco{ 
+        width: 90%;
+        align-self: flex-end; }
+   .seis{ 
+        width: 90%;
+        align-self: flex-start; }    
+    .siete {
+        width: 50%;
+        align-self: flex-start; }  
+    .nueve { 
+        width: 50%;
+        align-self: flex-end; }      
+     
+    .diez {
+        width: 25%;
+        align-self: center; }    
+    }
+    @media (min-width: 701px) { 
+    .row1, .row2, .row3, .row4 {
+        flex-direction: column; }
+    .naranjo, .azul, .verde {  
+        width: 100%; }
+   .uno { width: 5%;}
+    .dos { width: 9%;}
+    .tres { width: 80%;} 
+     .dotre, .uno    { 
+        display: flex;
+     }
+ }    

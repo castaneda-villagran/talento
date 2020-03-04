@@ -1,0 +1,17 @@
+.row1, .row2, .row3 {
+    display: flex;
+    flex-direction: column;
+}
+ .celeste, .amarillo3, .amarillo4, .plomo5, .plomo6, .plomo7, .plomo8 {   
+    color: white;
+    border: solid 1px black;
+    text-align: center;
+    height: 50px;
+    width: 100%;
+}
+
+.celeste { background-color: lightskyblue;}
+.amarillo3, .amarillo4 { background-color: yellow;
+                         color: black;}
+
+.plomo5, .plomo6, .plomo7, .plomo8  { background-color: gray;}

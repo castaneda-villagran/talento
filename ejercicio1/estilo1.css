@@ -1,0 +1,32 @@
+.row1, .row2, .row3 {
+    display: flex;
+   }
+
+.azul, .verde, .naranjo3, .naranjo4 {
+    border: solid 1px black;
+    color: white;
+    text-align: center;
+    height: 50px;
+    width: 100%;
+}
+
+.azul {    background-color: royalblue;}
+.verde {   background-color: green;}
+.naranjo3, .naranjo4 { background-color: orange;}
+
+@media (min-width: 400px) and ( max-width: 700px){
+ .row1, .row3 {
+     display: flex;
+ }
+}
+@media ( min-width:701px) {
+    .row2 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .naranjo3 {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+  
